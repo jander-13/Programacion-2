@@ -3,10 +3,13 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/AlumnosJavi/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/AlumnosJavi/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Diagnostico/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Diagnostico/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Multiproceso/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Multiproceso/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Multiprocesp/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Multiprocesp/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/registro_ping.log" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
