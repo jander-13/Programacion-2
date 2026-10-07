@@ -1,15 +1,11 @@
 package org.example;
 
-import jdk.swing.interop.SwingInterOpUtils;
-
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeFormatterBuilder;
 
 public class DiagosticoRed {
 
