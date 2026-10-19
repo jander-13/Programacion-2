@@ -9,7 +9,7 @@ public class Pipelines1 {
 
     public static void main(String[] args) {
         File ficheroEntrada = new File("alumnos.txt");
-        File ficheroSalida = new File("alumnos_matematicas.txt");
+        File ficheroSalida = new File("alumnos_Matematicas.txt");
 
         // 1. Proceso 1: Lee el contenido del fichero con el comando interno 'type' de Windows
         ProcessBuilder pb1 = new ProcessBuilder("cmd.exe", "/c", "type", ficheroEntrada.getAbsolutePath());

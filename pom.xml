@@ -12,6 +12,7 @@
         <module>Multiproceso</module>
         <module>AlumnosJavi</module>
         <module>Diagnostico</module>
+        <module>Examen1</module>
     </modules>
 
     <properties>
