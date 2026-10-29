@@ -22,7 +22,7 @@ public class AutoMatricula {
             hilo.start();
 
             try{
-                Thread.sleep(ThreadLocalRandom.current().nextInt(1000, 300));
+                Thread.sleep(ThreadLocalRandom.current().nextInt(100, 300));
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
             }

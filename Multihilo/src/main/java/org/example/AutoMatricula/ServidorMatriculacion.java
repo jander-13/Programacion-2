@@ -7,23 +7,24 @@ public class ServidorMatriculacion {
     private static final ServidorMatriculacion INSTANCIA = new ServidorMatriculacion();
 
     // Recursos concurrentes encapsulados dentro del servicio
-    private final BlockingQueue salaEspera = new ArrayBlockingQueue(4);
+    private final BlockingQueue<String> salaEspera = new ArrayBlockingQueue<>(4);
     private final Semaphore servidorValidacion = new Semaphore(2);
     private final Semaphore mutexPlazas = new Semaphore(1);
 
     private int plazasDisponibles = 3;
 
-    private ServidorMatriculacion() {};
+    private ServidorMatriculacion() {}
 
     public static ServidorMatriculacion getInstancia() {
         return INSTANCIA;
     }
+
     // Paso 1 --> Paso por la cola de espera
     public boolean entrarEnSalaEspera(String dni) throws InterruptedException{
         return salaEspera.offer(dni, 1500, TimeUnit.MILLISECONDS);
     }
 
-    public void validarExpediente(String dni){
+    public void validarExpediente(String dni) throws  InterruptedException{
         servidorValidacion.acquire();
         try{
             salaEspera.remove(dni);
@@ -34,7 +35,7 @@ public class ServidorMatriculacion {
     }
 
 
-    public boolean intentarReservarPlaza(){
+    public boolean intentarReservarPlaza() throws  InterruptedException{
         mutexPlazas.acquire();
         try {
             if (plazasDisponibles > 0) {
